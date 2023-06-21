@@ -5,28 +5,29 @@ import news1 from "../../assets/img/news01.jpg";
 import news2 from "../../assets/img/news02.jpg";
 import news3 from "../../assets/img/news03.jpg";
 
-const News = () => {
+export default function News  ()  {
   return (
     <div
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      className="bg-white  md:px-[160px] px-[20px] mt-[80px] w-full"
+      // data-aos="fade-up"
+      // data-aos-duration="1000"
+      className="bg-white  container mx-auto md:mt-28 mt-12 px-2 md:px-0 w-full"
     >
-      <h1 className=" border-l-[8px]  border-[#d70018] bg-[#a7a6a633] pl-6 font-bold md:text-[28px] text-[20px] ">
-        NEWS
-      </h1>
-      <div className="md:flex md:mt-[40px] mt-[20px]">
+      <div className="border-l-8 pl-6 py-1 flex border-red-600 bg-[#ebe6e668] items-center overflow-hidden relative ">
+        <h1 className=" font-bold md:text-2xl text-[20px] text-[#001e2b] ">
+          NEWS
+        </h1>
+      </div>
+      <div className="md:flex md:mt-16 mt-8">
 
 {/* NEWS 1 */}
-        <div className="flex-1 rounded-lg  bg-[#f5f5f7]">
-          <div className="flex-col items-center justify-center p-2">
-            <h1 className="text-[14px] md:text-[16px] font-bold ">
-              In celebration of Black History Month, Apple releases new Black
-              Unity collection and content
+        <div className="flex-1 rounded-lg  bg-[#f2f2f2]">
+          <div className="flex-col items-center justify-center p-4">
+            <h1 className="text-sm font-bold ">
+              In celebration of Black History Month, Apple releases new Black...
             </h1>
-            <h2 className="text-[14px] my-1 mb-5 items-center flex">
-              <DateRangeOutlined style={{ fontSize: "18px" }} />
-              18/01/2023
+            <h2 className="text-xs my-1 mb-5 items-center flex mt-2">
+              <DateRangeOutlined style={{ fontSize: "16px" }} className="mr-1" />
+              18/01/2022
             </h2>
             <Link to="https://www.apple.com/newsroom/2023/01/apple-celebrates-black-history-month-with-unity-collection-and-exclusive-content/">
               <img
@@ -35,13 +36,10 @@ const News = () => {
                 alt="img-new.01"
               />
             </Link>
-            <div className="mt-3">
-              <p className="text-[14px] ">
-            
+            <div className="mt-5">
+              <p className="text-xs font-medium text-justify">
                 Starting today, customers can show their support with this
-                year is Black Unity Collection, which includes a special-edition
-                Apple Watch Black Unity Sport Loop, alongside a new matching
-                watch face and iPhone wallpaper.
+                year is Black Unity Collection, which includes a special-edition...
               </p>
             </div>
           </div>
@@ -49,16 +47,14 @@ const News = () => {
 {/* END NEWS 1 */}
 
 {/* NEWS 2 */}
-        <div className="flex-1 md:mx-3 md:mt-0 mt-[20px] rounded-lg  bg-[#f5f5f7]">
-          <div className="flex-col items-center justify-center  p-2">
-            <h1 className="text-[14px] md:text-[16px] font-bold ">
-              Apple unveils MacBook Pro featuring M2 Pro and M2 Max, with more
-              game-changing performance and the longest battery life ever in a
-              Mac
+        <div className="flex-1 md:mx-3 md:mt-0 mt-[20px] rounded-lg  bg-[#f2f2f2]">
+          <div className="flex-col items-center justify-center  p-4">
+            <h1 className="text-sm font-bold ">
+              Apple unveils MacBook Pro featuring M2 Pro and M2 Max, with more...
             </h1>
-            <h2 className="text-[14px] my-1 mb-5  items-center flex">
-              <DateRangeOutlined style={{ fontSize: "18px" }} />
-              17/01/2023
+            <h2 className="text-xs my-1 mb-5 items-center flex mt-2">
+              <DateRangeOutlined style={{ fontSize: "18px" }} className="mr-1" />
+              1/01/2022
             </h2>
 
             <Link to="https://www.apple.com/newsroom/2023/01/apple-unveils-macbook-pro-featuring-m2-pro-and-m2-max/">
@@ -68,12 +64,10 @@ const News = () => {
                 alt="img-new.02"
               />
             </Link>
-            <div className="mt-3">
-              <p className="text-[14px]">
+            <div className="mt-5">
+              <p className="text-xs font-medium text-justify">
                 Apple today announced the new 14- and 16-inch MacBook Pro
-                featuring M2 Pro and M2 Max, Apple is next-generation pro silicon
-                that brings even more power-efficient performance and battery
-                life to pro users.
+                featuring M2 Pro and M2 Max,...
               </p>
             </div>
           </div>
@@ -81,15 +75,15 @@ const News = () => {
 {/* END NEWS 2 */}
 
 {/* NEWS 3 */}
-        <div className="flex-1  md:mt-0 mt-[20px] rounded-lg bg-[#f5f5f7]">
-          <div className="flex-col items-center justify-center p-2">
-            <h1 className="text-[14px] md:text-[16px] font-bold">
-              Apple introduces new Mac mini with M2 and M2 Pro — more powerful,
-              capable, and versatile than ever
+        <div className="flex-1  md:mt-0 mt-[20px] rounded-lg bg-[#f2f2f2]">
+          <div className="flex-col items-center justify-center p-4">
+            <h1 className="text-sm font-bold">
+              Apple introduces new Mac mini with M2 and M2 Pro-more powerful,
+              capable,...
             </h1>
-            <h2 className="text-[14px] my-1 mb-5  items-center flex">
-              <DateRangeOutlined style={{ fontSize: "18px" }} />
-              17/01/2023
+            <h2 className="text-xs my-1 mb-5 items-center flex mt-2">
+              <DateRangeOutlined style={{ fontSize: "18px" }} className="mr-1" />
+              17/01/2022
             </h2>
 
             <Link to="https://www.apple.com/newsroom/2023/01/apple-introduces-new-mac-mini-with-m2-and-m2-pro-more-powerful-capable-and-versatile-than-ever/">
@@ -100,12 +94,10 @@ const News = () => {
               />
             </Link>
 
-            <div className="mt-3">
-              <p className="text-[14px]">
+            <div className="mt-5">
+              <p className="text-xs font-medium text-justify">
                 Apple today unveiled the new Mac mini, supercharged by M2 and
-                the all-new M2 Pro. With the M2 chip, Mac mini is even more
-                powerful, capable, and affordable with a new starting price of
-                just $599.
+                the all-new M2 Pro. With the M2 chip,...
               </p>
             </div>
           </div>
@@ -121,7 +113,7 @@ const News = () => {
         className="flex items-center justify-end "
       >
         <Link to="https://www.apple.com/newsroom/">
-          <button className="underline  text-[14px] mt-6">
+          <button className="hover:underline duration-500 flex items-center font-medium  text-sm mt-6 p-2">
             See more
             <ArrowForwardIos style={{ fontSize: "14px" }} />
           </button>
@@ -132,4 +124,4 @@ const News = () => {
   );
 };
 
-export default News;
+

@@ -89,6 +89,22 @@ export const proApiSale = [
     category: "macpro",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },
+
+
+
+  {
+    id: 6,
+    title: "iPhone 13 Pro Max 512GB",
+    img: "./image/pro/i6.webp",
+    imgSale: "./image/sale-icon.png",
+    price: "2400",
+    priceOld: "$ 3000",
+    category: "iphone13",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
+  },
+
+
+
 ];
 
 export const proApiHome = [
@@ -124,6 +140,17 @@ export const proApiHome = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
     category: "ipadpro",
   },
+
+  {
+    id: 17,
+    title: "MacBook Pro 13 inch M2 2022",
+    img: "./image/pro/m6.webp",
+    price: "2100",
+    category: "macpro",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
+  },
+
+  
 ];
 
 export const proApi = [

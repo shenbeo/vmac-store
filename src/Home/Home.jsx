@@ -1,10 +1,11 @@
 import React from "react";
 import { CartProvider } from "react-use-cart";
-import Router from "../Router/Router";
+const Router = React.lazy(() => import("../Router/Router"));
 
-const Home = () => {
+export default function Home  ()  {
   return (
     <div>
+      
       <CartProvider>
         <Router />
       </CartProvider>
@@ -12,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+

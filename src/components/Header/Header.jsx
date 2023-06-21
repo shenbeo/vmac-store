@@ -18,18 +18,15 @@ import { signOut } from "firebase/auth";
 import { auth } from "../../Firebase.config";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-const Header = ( ) => {
+
+
+export default function Header ()  {
   const [loading, setLoading] = useState(false);
   const {currentUser} = useAuth()
   const profileActionRef = useRef(null)
   const navigate = useNavigate()
   const { totalUniqueItems } = useCart();
   let [open, setOpen] = useState(false);
-
-
-
-
-
 
 
 const toggleProfileActions = () => profileActionRef.current.classList.toggle('show__profileActions') // HOVER ACTION
@@ -58,8 +55,8 @@ const logout = ()=>{
 
   return (
       <div>
-          <div className="shadow-md w-full fixed top-0 left-0  text-xl z-10">
-            <div className="md:flex flex items-center justify-between md:h-[62px] h-[50px] bg-[#171717] text-white  md:px-[160px] px-[20px]">
+          <div className=" w-full fixed top-0 left-0  text-xl z-10">
+            <div className="md:flex flex items-center shadow-md justify-around md:h-[60px] h-[50px] bg-[#001e2b] text-white  md:px-0 px-2">
 
 {/*MENU MOBI*/}
             <div onClick={() => setOpen(!open)}className="cursor-pointer md:hidden">
@@ -71,10 +68,10 @@ const logout = ()=>{
               <div className="flex-auto  md:flex-initial">
                 <NavLink to="/">
                   <div className="flex items-center justify-center ">
-                    <div className="bg-[#d70018] md:text-[26px] text-[25px] font-bold ">
-                      <h1 className="p-1">V.</h1>
+                    <div className="bg-red-600 rounded-l-3xl md:text-[26px] text-[25px] font-bold flex">
+                      <h1 className="pl-2 py-1 pr-1">X.</h1>
                     </div>
-                    <div className="flex items-end px-1 border-2 border-[#d70018] md:text-[16px] text-[15px]  font-medium">
+                    <div className="flex items-end px-1 border-2 border-red-600 md:text-[16px] text-[15px]  font-medium">
                       <h1>m</h1>
                       <h2 className="mb-1">
                         <Apple style={{ fontSize: "20px" }} />
@@ -92,10 +89,10 @@ const logout = ()=>{
                     open ? "top-[50px]" : "top-[-1800px]"
                   }`}>
                   {Links.map((link) => (
-                    <li key={link.name} className="md:text-[20] text-[18px] md:h-[62px] md:w-[100px] md:flex md:items-center md:justify-center hover:bg-[#49474769] transition-all duration-600 ease-in h-[50px] flex items-center  md:mx-3 ">
+                    <li key={link.name} className=" md:text-base text-[18px] md:h-[62px] md:w-[100px] md:flex md:items-center md:justify-center hover:bg-[#49474769] transition-all duration-600 ease-in h-[50px] flex items-center  md:mx-3 ">
                       <NavLink to={link.link} className="text-white duration-500 ml-6 md:ml-0 flex">
                             <h1 className="md:hidden">{link.icon}</h1>
-                            <p className="ml-3 md:ml-0 text-[14px] md:text-[18px]">{link.name}</p>
+                            <p className="ml-3 md:ml-0 text-sm md:text-base">{link.name}</p>
                       </NavLink>
                     </li>
                   ))}
@@ -123,7 +120,7 @@ const logout = ()=>{
                   <NavLink to="/cartPage">
                       <div className="flex  cursor-pointer mr-3 ">
                           <h1><ShoppingCartOutlined /></h1>
-                            <div className="flex items-center justify-center bg-[#d70018] text-white rounded-full text-[13px] absolute ml-[18px] w-4 h-4">
+                            <div className="flex items-center justify-center bg-red-600 text-white rounded-full text-[13px] absolute ml-[18px] w-4 h-4">
                                 <h2 className="">{totalUniqueItems}</h2>
                             </div>
                       </div>
@@ -158,4 +155,4 @@ const logout = ()=>{
   );
 };
 
-export default Header;
+

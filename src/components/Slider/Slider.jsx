@@ -11,9 +11,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const Slider = () => {
+export default function Slider () {
   return (
-    <div className="md:mt-[62px] mt-[50px]">
+    <div className=" md:mt-14 mt-12">
       <div>
         <Swiper
           spaceBetween={30}
@@ -37,10 +37,10 @@ const Slider = () => {
                     <img className="object-cover" src={slides.img} alt="image-slider" />
                     <div className="absolute flex flex-col items-center justify-center ">
                       <div className="flex flex-col items-center justify-center md:ml-[300px] ml-[10px]">
-                        <h1 className="text-white mb-3 md:text-[50px] text-[16px] font-medium border-b-2 border-white">
+                        <h1 className="text-white mb-3 md:text-4xl text-[16px] font-semibold">
                           {slides.title}
                         </h1>
-                        <div className="text-white  text-[8px] md:text-[16px] md:w-[100%] w-[200px] flex flex-wrap md:mb-5 mb-2 font-light tracking-widest">
+                        <div className="text-white  text-[8px] md:text-sm md:w-[100%] w-[200px] flex flex-wrap md:mb-5 mb-2 font-light tracking-widest">
                           <p className="text-center">
                             LOREM IPSUM, DOLOR SIT AMET CONSECTETUR
                           </p>
@@ -49,7 +49,7 @@ const Slider = () => {
 
                       <div className="md:ml-[300px] ml-[10px] md:mt-2">
                         <Link to="/productsPage">
-                          <button className="text-white border-2 p-2 rounded-3xl border-[#d70018] hover:bg-[#d70018] duration-700 font-medium  text-[8px] md:text-[20px]">
+                          <button className="text-white border-[1px] border-red-600 py-1 px-2 font-light hover:bg-red-600 duration-500  text-[8px] md:text-base">
                             Shop Now
                           </button>
                         </Link>
@@ -66,4 +66,3 @@ const Slider = () => {
   );
 };
 
-export default Slider;
