@@ -49,7 +49,7 @@ export default function ProductsDetails ()  {
   }, []);
 
   return (
-    <div>
+    <div className=" bg-white">
       { loading ?  <div className="flex  h-[100vh] items-center justify-center">
       <RotateLoader color="#001e2b" 
             height={8}
@@ -58,7 +58,7 @@ export default function ProductsDetails ()  {
     </div> :
         <div>
           <Header />
-          <div className="container mx-automd:px-0 px-2">
+          <div className="container mx-auto md:px-0 px-2">
             <div className=" bg-white w-[100%] h-[100%] ">
               <div className="  pt-[60px] ">
                 <div className="md:flex justify-center items-center mt-[30px]">

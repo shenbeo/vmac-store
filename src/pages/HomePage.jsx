@@ -30,7 +30,7 @@ return (
             width={400}
             loading={loading}/>
     </div> :
-        <div>
+        <div className=" bg-white">
           <Header />
           <Slider />
           <ItemList />

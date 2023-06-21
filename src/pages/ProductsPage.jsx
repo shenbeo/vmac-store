@@ -272,7 +272,7 @@ export default function ProductsPage  ()  {
 
 
   return (
-    <div>
+    <div className=" bg-white">
       { loading ? <div className="flex  h-[100vh] items-center justify-center">
       <RotateLoader color="#001e2b" 
             height={8}
