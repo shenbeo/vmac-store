@@ -69,7 +69,7 @@ const logout = ()=>{
                 <NavLink to="/">
                   <div className="flex items-center justify-center ">
                     <div className="bg-red-600 rounded-l-3xl md:text-[26px] text-[25px] font-bold flex">
-                      <h1 className="pl-2 py-1 pr-1">X.</h1>
+                      <h1 className="pl-2 py-1 pr-1">V.</h1>
                     </div>
                     <div className="flex items-end px-1 border-2 border-red-600 md:text-[16px] text-[15px]  font-medium">
                       <h1>m</h1>

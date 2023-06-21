@@ -25,7 +25,7 @@ export default function Footer ()  {
                 <div className="flex items-center">
                   <div className="flex h-[36px] items-center">
                     <div className="bg-red-600  rounded-l-3xl md:text-[26px] h-[36px] text-[25px] font-bold flex items-center ">
-                      <h1 className="pl-2 pr-1">X.</h1>
+                      <h1 className="pl-2 pr-1">V.</h1>
                     </div>
                     <div className="border-2 border-red-600 h-[36px]">
                       <div className="flex items-end  px-1  md:text-[16px] text-[15px] mt-[3px]  font-medium">
