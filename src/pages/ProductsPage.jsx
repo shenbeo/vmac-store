@@ -294,8 +294,8 @@ export default function ProductsPage  ()  {
 
 
 {/* ITEM PRO */}
-              <div className="flex flex-wrap items-center justify-start container mx-auto mt-8">
-                <div className="mr-2">
+              <div className="flex flex-wrap items-center justify-start container mx-auto md:px-0 px-2 mt-8">
+                <div className="m-2">
                   <select
                     onChange={hanleFilter}
                     className="outline-none text-sm p-1 border-[1px] rounded cursor-pointer text-white bg-[#001e2b]"
@@ -312,7 +312,7 @@ export default function ProductsPage  ()  {
                   </select>
                 </div>
 
-                <div  className="mr-2">
+                <div  className="m-2">
                   <select
                     onChange={hanleFilter}
                     className="outline-none text-sm p-1 border-[1px] rounded cursor-pointer text-white bg-[#001e2b]"
@@ -330,7 +330,7 @@ export default function ProductsPage  ()  {
                   </select>
                 </div>
 
-                <div  className="mr-2">
+                <div  className="m-2">
                   <select
                     onChange={hanleFilter}
                     className="outline-none text-sm p-1 border-[1px] rounded cursor-pointer text-white bg-[#001e2b]"
@@ -343,7 +343,7 @@ export default function ProductsPage  ()  {
                   </select>
                 </div>
 
-                <div  className="mr-2">
+                <div  className="m-2">
                   <select
                     onChange={hanleFilter}
                     className="outline-none text-sm p-1 border-[1px] rounded cursor-pointer text-white bg-[#001e2b]"
@@ -356,7 +356,7 @@ export default function ProductsPage  ()  {
                   </select>
                 </div>
 
-                <div  className="mr-2">
+                <div  className="m-2">
                   <select
                     onChange={hanleFilter}
                     className="ooutline-none text-sm p-1 border-[1px] rounded cursor-pointer text-white bg-[#001e2b] "
