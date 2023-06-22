@@ -8,8 +8,8 @@ import news3 from "../../assets/img/news03.jpg";
 export default function News  ()  {
   return (
     <div
-      // data-aos="fade-up"
-      // data-aos-duration="1000"
+      data-aos="fade-up"
+      data-aos-duration="1000"
       className="bg-white  container mx-auto md:mt-28 mt-12 px-2 md:px-0 w-full"
     >
       <div className="border-l-8 pl-6 py-1 flex border-red-600 bg-[#ebe6e668] items-center overflow-hidden relative ">

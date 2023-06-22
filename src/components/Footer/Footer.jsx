@@ -42,7 +42,7 @@ export default function Footer ()  {
             </div>
   
             <div className="md:mt-5 mt-2 md:w-[400px] text-[#9c9c9c] md:mb-4 mb-2">
-              <p className="text-justify mdLtext-sm text-xs font-medium">
+              <p className="text-justify md:text-sm text-xs font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
                 dolorum possimus debitis neque consectetur perspiciatis veritatis
                 nulla.
@@ -77,13 +77,13 @@ export default function Footer ()  {
               <ul className="text-[#9c9c9c] font-medium md:text-sm text-xs">
                 <li className="mb-1 ">
                   <LocationOnOutlined style={{ fontSize: "16px" }} className="mr-1" />69, Binh Thanh District,
-                  TP.HCM
+                  HCM City
                 </li>
                 <li className="mb-1 ">
                   <LocalPhoneOutlined style={{ fontSize: "16px" }} className="mr-1" />(+84)964.999.999
                 </li>
                 <li className="">
-                  <EmailOutlined style={{ fontSize: "16px" }} className="mr-1" />xmacshop@gamil.com
+                  <EmailOutlined style={{ fontSize: "16px" }} className="mr-1" />vmacshop@gamil.com
                 </li>
               </ul>
             </div>

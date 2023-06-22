@@ -374,13 +374,13 @@ export default function ProductsPage  ()  {
 
 {/* SEARCH */}
   <div className="flex items-center justify-center md:my-6">
-                <div className="  md:w-[300px] flex items-center border-[1px] rounded text-sm border-[#b8b9bc]  outline-none   m-2 p-1">
+                <div className="  md:w-[300px]  flex items-center border-[1px] rounded text-sm border-[#b8b9bc]  outline-none   m-2 p-1">
                   <SearchOutlined />
                   <input
                     onChange={handleSearch}
                     type="text"
                     placeholder="Search..."
-                    className="outline-none ml-2 w-[100%]  text-sm"
+                    className="outline-none bg-transparent ml-2 w-[100%]  text-sm"
                   />
                 </div>
                 </div>
