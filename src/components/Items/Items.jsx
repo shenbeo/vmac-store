@@ -30,7 +30,7 @@ export default function Items ({ item }) {
           />
           <div
             className={
-              `flex p-1 items-center justify-center absolute w-[100%] transition-all h-[100%] ease-in md:duration-500 duration-400` +
+              `flex p-1 items-center justify-center absolute w-[100%] transition-all h-[100%]  ` +
               hoverEffects
             }
           >

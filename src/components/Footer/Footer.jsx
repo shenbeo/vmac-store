@@ -144,12 +144,11 @@ export default function Footer ()  {
   {/* END CONTACT */}
       </div>
         <hr className="border-[#9c9c9c]  my-10" />
-            <span className="block font-medium  text-[#9c9c9c] text-end">
-              © 2023{" "}
+            <span className="block font-medium text-xs text-[#9c9c9c] text-end">
+              © 2023
                   <Link to="/" className="hover:underline duration-500">
-                    NguyenThanhVinh
+                     NguyenThanhVinh
                   </Link>
-              . All Rights Reserved.
             </span>
       </div>
     </div>

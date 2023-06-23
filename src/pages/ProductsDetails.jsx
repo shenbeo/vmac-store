@@ -64,7 +64,7 @@ export default function ProductsDetails ()  {
                 <div className="md:flex justify-center items-center mt-[30px]">
                   <div className="flex items-center justify-center">
                     <img
-                      className="md:h-[100%] h-[300px]"
+                      className="md:h-[300px] h-[300px] object-cover"
                       src={img}
                       alt="img-products"
                     />

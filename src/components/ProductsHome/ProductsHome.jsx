@@ -24,7 +24,6 @@ export default function ProductsHome ()  {
         <div className="border-l-8 pl-6 py-1 flex border-red-600 bg-[#ebe6e668] items-center overflow-hidden relative ">
           <h1 className="font-bold md:text-2xl text-[20px] text-[#001e2b] ">PRODUCTS</h1>
         </div>
-  
         <div 
         data-aos="fade-up"
       data-aos-duration="1000" 
@@ -32,13 +31,13 @@ export default function ProductsHome ()  {
           {products.map((prohome, index) => {
             return (
               <div key={index} className="overflow-hidden relative border-[1px] rounded-lg hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 md:pb-1 pb-4">
-                <ink to={`/productsHome/${prohome.id}`} className="flex items-center justify-center">
+                <Link to={`/productsHome/${prohome.id}`} className="flex items-center justify-center">
                   <img
                     className=" object-cover hover:scale-[1.1] ease-in w-44 duration-200 cursor-pointer"
                     src={prohome.img}
                     alt="img-products"
                   />
-                </ink>
+                </Link>
                 <div className="text-center md:mt-4 mt-2">
                   <h1 className="text-sm md:h-[100%] h-[38px] font-semibold">
                   {prohome.title.substring(0,20)} ...
