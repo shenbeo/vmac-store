@@ -4,7 +4,8 @@ import React from 'react'
 export default function Policy  ()  {
   return (
     <div className='  bg-[#ccc] px-2 md:px-0'>
-        <div className='md:flex w-full grid grid-cols-2 container mx-auto  py-6  md:mt-28 mt-14   md:items-center justify-between '>
+
+        <div className='md:flex w-full grid grid-cols-2 container mx-auto  py-6  md:mt-10 mt-14   md:items-center justify-between '>
     
     {/* TEXT 1 */}
             

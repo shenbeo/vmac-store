@@ -552,7 +552,7 @@ export default function ProductsDetails ()  {
                           <div  className="flex items-center justify-center md:mt-4 md:mb-5 mt-2" >
                             <button
                             onClick={() => addItem(prohome)}
-                              className="border-[1px] text-sm px-2 py-2 border-[#001e2b]  hover:font-medium  bg-[#001e2b] hover:bg-transparent hover:text-black text-white duration-500"
+                              className="border-[1px] text-sm px-2 rounded py-2 border-[#001e2b]  hover:font-medium  bg-[#001e2b] hover:bg-transparent hover:text-black text-white duration-500"
                             >
                               <p onClick={success}>Add to Cart</p>
                             </button>

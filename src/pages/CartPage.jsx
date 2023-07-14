@@ -101,7 +101,7 @@ export default function CartPage  ()  {
               <div className="md:flex md:flex-col justify-between items-center container ">
       
               
-                  <div className=" md:grid md:grid-cols-2 flex flex-col  md:mt-[40px] pt-[50px] md:min-h-[620px] ">
+                  <div className=" md:grid md:grid-cols-2 flex flex-col  md:mt-32 pt-[90px] md:pt-0 md:min-h-[620px] ">
       {/* =====================*/}
         
                     <div className="text-sm overflow-y-auto md:h-[520px]">
@@ -198,7 +198,7 @@ export default function CartPage  ()  {
         {/* ====================== */}
                     <div className="text-sm md:mt-0 mt-4 md:ml-2">
       
-                        <div className=" p-4  rounded-xl bg-white">
+                        <div className=" p-4  rounded-xl bg-white shadow-md">
                           <h1 className="font-bold">Customer information</h1>
                             <div className=" flex flex-col md:flex md:flex-row items-center justify-center">
                               <input className="border-[1px] border-[#ccc] px-4 rounded p-2 outline-none m-2 w-[100%]" type="text" placeholder="First and last name"/>
@@ -206,7 +206,7 @@ export default function CartPage  ()  {
                             </div>
                         </div>
       
-                        <div className=" mt-4  p-4 text-sm rounded-xl bg-white">
+                        <div className=" mt-4  p-4 text-sm rounded-xl bg-white shadow-md">
                           <h1 className="font-bold">Choose a delivery method</h1>
                             <div className="flex flex-col text-center w-[100%] ">
                               <div className="my-2 md:m-2">
@@ -254,7 +254,7 @@ export default function CartPage  ()  {
                         </div>
                    
       
-                        <div className="mt-4 p-4  rounded-xl bg-white text-sm">
+                        <div className="mt-4 p-4  rounded-xl bg-white text-sm shadow-md">
                             <div className="flex items-center justify-between">
                                 <h1 className=" font-medium">Total Unique Items:</h1>
                                 <p className="">x{totalUniqueItems}</p>
@@ -267,7 +267,7 @@ export default function CartPage  ()  {
                                 <h1 className="font-bold">Total Price:</h1>
                                 <p className="text-red-600 font-bold text-lg"> $ {cartTotal}</p>
                             </div>
-                                <hr className="border-[#9c9c9c]  my-4" />
+                                <hr className="border-[#9c9c9c] shadow-md  my-4" />
                             <Link to="/" onClick={successBuy}>
                               <button  className="rounded text-sm my-2 w-[100%] border-[1px]   border-[#001e2b] p-3 bg-[#001e2b] text-white font-medium hover:bg-white hover:text-black hover:font-medium duration-500">
                                 Buy

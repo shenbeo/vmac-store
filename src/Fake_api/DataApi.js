@@ -25,26 +25,42 @@ export const itemList = [
 
   {
     title: "AirPods",
-    img: "./image/itemlist/item5.jpg",
+    img: "https://dhakaacademy.com/wp-content/uploads/2023/05/iphone.jpg",
   },
   {
     title: "Mac mini",
-    img: "./image/itemlist/item9.jpg",
+    img: "https://images.macrumors.com/t/jNcm58FN8ttFBI9tSZs3cmyx150=/800x0/smart/article-new/2017/12/Deals-Header-Image-Blue.jpg?lossy",
   },
   {
     title: "Accessory",
-    img: "./image/itemlist/item3.jpg",
+    img: "https://cdn.tgdd.vn/Files/2022/01/30/1413688/sanphamapplegiatotdiptettaitgddh2_1280x720-800-resize.jpg",
   },
   {
     title: "iPad",
-    img: "./image/itemlist/item4.jpg",
+    img: "https://kenh14cdn.com/thumb_w/660/203336854389633024/2021/5/28/macos-12-releasae-date-a-feature-rumours-mainthumb800-16221844518211508878349.png",
   },
   {
     title: "Mac",
-    img: "./image/itemlist/item2.jpg",
+    img: "https://itechua.com/wp-content/uploads/2022/08/Screenshot_10-11.jpg",
   },
 ];
+// {
+//   title: "iPhone",
+//   img: "https://photos5.appleinsider.com/gallery/35190-64334-april-apple-sale-bh-photo-xl.jpg",
+// },
 
+// {
+//   title: "AirPods",
+//   img: "https://cdn.tgdd.vn/Files/2022/01/30/1413688/sanphamapplegiatotdiptettaitgddh2_1280x720-800-resize.jpg",
+// },
+// {
+//   title: "Mac mini",
+//   img: "https://photos5.appleinsider.com/gallery/51005-100761-apple-products-on-sale-2022-xl.jpg",
+// },
+// {
+//   title: "Accessory",
+//   img: "https://images.macrumors.com/t/jNcm58FN8ttFBI9tSZs3cmyx150=/800x0/smart/article-new/2017/12/Deals-Header-Image-Blue.jpg?lossy",
+// },
 export const proApiSale = [
   {
     id: 1,
@@ -87,6 +103,16 @@ export const proApiSale = [
     price: "2400",
     priceOld: "$ 3000",
     category: "macpro",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
+  },
+  {
+    id: 25,
+    title: "iPad Pro M1 11 inch WiFi",
+    img: "./image/pro/pd5.webp",
+    imgSale: "./image/sale-icon.png",
+    price: "2400",
+    priceOld: "$ 3000",
+    category: "ipadpro",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },
 
@@ -147,6 +173,14 @@ export const proApiHome = [
     img: "./image/pro/m6.webp",
     price: "2100",
     category: "macpro",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
+  },
+  {
+    id: 26,
+    title: "iPad Air 5 WiFi",
+    img: "./image/pro/pd7.webp",
+    price: "1400",
+    category: "ipadair",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },
 
@@ -346,6 +380,9 @@ export const proApi = [
     title: "iPad Pro M1 11 inch WiFi",
     img: "./image/pro/pd5.webp",
     price: "1000",
+    imgSale: "./image/sale-icon.png",
+    price: "2400",
+    priceOld: "$ 3000",
     category: "ipadpro",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },

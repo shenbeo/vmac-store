@@ -6,6 +6,7 @@ import {
   LocalOfferOutlined,
   MenuOutlined,
   ShoppingCartOutlined,
+  Notifications
 } from "@material-ui/icons";
 import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
@@ -18,6 +19,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../../Firebase.config";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import Float_btn from "../Loader/Float_btn";
 
 
 export default function Header ()  {
@@ -55,9 +57,13 @@ const logout = ()=>{
 
   return (
       <div>
-          <div className=" w-full fixed top-0 left-0  text-xl z-10">
-            <div className="md:flex flex items-center shadow-md justify-around md:h-[60px] h-[50px] bg-[#001e2b] text-white  md:px-0 px-2">
+        <Float_btn />
 
+          <div className=" w-full fixed top-0 left-0  text-xl z-10">
+            <div className="bg-red-500 pt-1 text-white font-medium text-base">
+                <marquee behavior="alternate">HOT SALE !!! Record SALE OFF !! 20% only today </marquee>
+            </div>
+            <div className="md:flex flex items-center shadow-md justify-around md:h-[60px] h-[50px] bg-[#001e2b] text-white  md:px-0 px-2">
 {/*MENU MOBI*/}
             <div onClick={() => setOpen(!open)}className="cursor-pointer md:hidden">
                   <MenuOutlined style={{ fontSize: "30px" }}></MenuOutlined>
@@ -90,7 +96,7 @@ const logout = ()=>{
                   }`}>
                   {Links.map((link) => (
                     <li key={link.name} className=" md:text-base text-[18px] md:h-[62px] md:w-[100px] md:flex md:items-center md:justify-center hover:bg-[#49474769] transition-all duration-600 ease-in h-[50px] flex items-center  md:mx-3 ">
-                      <NavLink to={link.link} className="text-white duration-500 ml-6 md:ml-0 flex">
+                      <NavLink to={link.link} className="text-white items-center justify-center duration-500 ml-6 md:ml-0 flex">
                             <h1 className="md:hidden">{link.icon}</h1>
                             <p className="ml-3 md:ml-0 text-sm md:text-base">{link.name}</p>
                       </NavLink>
@@ -116,12 +122,21 @@ const logout = ()=>{
               </div>
   
               <div className="flex items-center justify-end">
+              <div>
+                  <NavLink to="/">
+                      <div className="flex  cursor-pointer mr-3 ">
+                          <h1 className="w-10 h-10 items-center justify-center duration-300 hover:bg-[#58585875] rounded-full text-[#ccc] flex"><Notifications/></h1>
+                            <div className="flex items-center justify-center bg-red-600 text-white rounded-full mt-1  absolute ml-6 w-3 h-3">
+                            </div>
+                      </div>
+                  </NavLink>
+                </div>
                 <div>
                   <NavLink to="/cartPage">
-                      <div className="flex  cursor-pointer mr-3 ">
-                          <h1><ShoppingCartOutlined /></h1>
-                            <div className="flex items-center justify-center bg-red-600 text-white rounded-full text-[13px] absolute ml-[18px] w-4 h-4">
-                                <h2 className="">{totalUniqueItems}</h2>
+                      <div className="flex  cursor-pointer mr-3   ">
+                          <h1 className="w-10 h-10 items-center justify-center duration-300 hover:bg-[#58585875] text-[#ccc] rounded-full flex"><ShoppingCartOutlined /></h1>
+                            <div className="flex items-center justify-center bg-red-600 text-white rounded-full text-[13px] absolute ml-6 w-4 h-4">
+                                <h2 className="text-[#ccc] font-medium">{totalUniqueItems}</h2>
                             </div>
                       </div>
                   </NavLink>

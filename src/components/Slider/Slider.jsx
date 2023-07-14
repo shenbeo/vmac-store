@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Slider () {
   return (
-    <div className=" md:mt-14 mt-12">
+    <div className=" md:mt-20 mt-12">
       <div>
         <Swiper
           spaceBetween={30}

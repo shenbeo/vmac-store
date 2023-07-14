@@ -10,14 +10,14 @@ export default function News  ()  {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="bg-white  container mx-auto md:mt-28 mt-12 px-2 md:px-0 w-full"
+      className="bg-white  container mx-auto md:mt-10 mt-12 px-2 md:px-0 w-full"
     >
-      <div className="border-l-8 pl-6 py-1 flex border-red-600 bg-[#ebe6e668] items-center overflow-hidden relative ">
+      <div className="border-l-8 pl-6 py-1 flex border-red-600 bg-[#dadada] items-center overflow-hidden relative ">
         <h1 className=" font-bold md:text-2xl text-[20px] text-[#001e2b] ">
           NEWS
         </h1>
       </div>
-      <div className="md:flex md:mt-16 mt-8">
+      <div className="md:flex md:flex-wrap md:mt-8 mt-8">
 
 {/* NEWS 1 */}
         <div className="flex-1 rounded-lg  bg-[#f2f2f2]">

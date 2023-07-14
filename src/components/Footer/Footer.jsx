@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 export default function Footer ()  {
   return (
     <div className="  bg-[#001e2b]">
-      <div className="w-full container mx-auto px-2 md:px-0  text-white conatiner py-12 text-[12px] md:text-[14px]  ">
+      <div className="w-full container mx-auto px-2 md:px-0  text-white conatiner py-8 text-[12px] md:text-[14px]  ">
         <div className="md:flex md:flex-wrap  justify-between  ">
           <div className="flex-col items-center justify-center">
   {/* LOGO */}
@@ -42,25 +42,25 @@ export default function Footer ()  {
             </div>
   
             <div className="md:mt-5 mt-2 md:w-[400px] text-[#9c9c9c] md:mb-4 mb-2">
-              <p className="text-justify md:text-sm text-xs font-medium">
+              <p className="text-justify md:text-sm text-xs">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
                 dolorum possimus debitis neque consectetur perspiciatis veritatis
-                nulla.
+                nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div className="md:mt-[40px] mt-4">
-              <h1 className="font-medium text-sm">
+            <div className="md:mt-6 mt-4">
+              <h1 className="font-medium text-sm ">
                 SIGN UP TO RECEIVE INFORMATION
               </h1>
               <h2 className="border-b-[1px] border-[#3b67a9] my-4 w-[40px]"></h2>
-              <div className="flex items-center">
+              <div className="flex items-center ">
                 <input
-                  className="flex text-black outline-none px-3 w-[230px] h-[30px]"
+                  className="flex text-black outline-none rounded-l px-3 w-[230px] h-[30px]"
                   type="text"
                 ></input>
                 <a href="/">
                   <SendOutlined
-                    className="bg-[#3b67a9] cursor-pointer p-1"
+                    className="bg-[#3b67a9] rounded-r cursor-pointer p-1"
                     style={{ fontSize: "30px" }}
                   />
                 </a>
@@ -74,10 +74,10 @@ export default function Footer ()  {
             <h1 className=" font-medium text-sm">ADDRESS</h1>
             <h2 className="border-b-[1px] border-[#3b67a9] my-4 w-[40px]"></h2>
             <div>
-              <ul className="text-[#9c9c9c] font-medium md:text-sm text-xs">
+              <ul className="text-[#9c9c9c]  md:text-sm text-xs">
                 <li className="mb-1 ">
                   <LocationOnOutlined style={{ fontSize: "16px" }} className="mr-1" />69, Binh Thanh District,
-                  HCM City
+                  HoChiMinh City
                 </li>
                 <li className="mb-1 ">
                   <LocalPhoneOutlined style={{ fontSize: "16px" }} className="mr-1" />(+84)964.999.999
@@ -95,7 +95,7 @@ export default function Footer ()  {
             <h1 className="font-medium text-sm">MENU</h1>
             <h2 className="border-b-[1px] border-[#3b67a9] my-4 w-[40px]"></h2>
             <div>
-              <ul className="text-[#9c9c9c] font-medium md:text-sm text-xs">
+              <ul className="text-[#9c9c9c] md:text-sm text-xs">
                 <Link to="/">
                   <li className="mb-1  cursor-pointer hover:text-white hover:underline duration-500 ">
                     Home
@@ -143,7 +143,7 @@ export default function Footer ()  {
   
   {/* END CONTACT */}
       </div>
-        <hr className="border-[#9c9c9c]  my-10" />
+        <hr className="border-[#9c9c9c]  my-4" />
             <span className="block font-medium text-xs text-[#9c9c9c] text-end">
               © 2023
                   <Link to="/" className="hover:underline duration-500">
