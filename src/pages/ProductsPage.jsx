@@ -26,6 +26,34 @@ export default function ProductsPage  ()  {
   const [loading, setLoading] = useState(false);
   const [loadingSk, setLoadingSk] = useState();
 
+
+  const [isCompleted, setIsCompleted] = useState(false)
+  const [index, setIndex] = useState(10)
+  const initialPosts = proApi.slice(0, index)
+
+
+  const loadMore = () => {
+    setIndex(index + 10)
+    console.log(index)
+    if (index >= proApi.length) {
+      setIsCompleted(true)
+      setLoadingSk(true);
+      setTimeout(() => {
+        setLoadingSk(false);
+      }, 1200);
+      
+    } else {
+      setIsCompleted(false)
+      setLoadingSk(true);
+      setTimeout(() => {
+        setLoadingSk(false);
+      }, 1200);
+    }
+  
+  }
+
+
+
   const success = () => {
     toast.success("Product added successfully");
   };
@@ -388,16 +416,16 @@ export default function ProductsPage  ()  {
 
             <div>
 
-              <div  className=" grid grid-cols-2 md:grid-cols-5 md:grid container mx-auto gap-4 mt-12">
-              { products.length === 0? <div className=' text-2xl font-medium text-center'>No  products!!!</div> : products && products.length>0 &&
-                products.map((pro, index) => {
+              <div  className=" grid grid-cols-2 md:grid-cols-5 md:grid container mx-auto md:gap-2 mt-12">
+              { initialPosts.length === 0? <div className=' text-2xl font-medium text-center'>No  products!!!</div> : initialPosts && initialPosts.length>0 &&
+                initialPosts.map((pro, index) => {
                   return (
                     <div>
                                   {loadingSk ? (
       <Sekeleton/>
     ) : (
                       <div key={index} 
-                       className="overflow-hidden relative border-[1px] rounded-lg hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 pb-1">
+                       className="overflow-hidden relative border-[1px] border-[#d3d3d3] rounded-lg hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 pb-4 m-1">
                         <Link to={`/productsPage/${pro.id}`} className="flex items-center justify-center">
                           <img
                             src={pro.img}
@@ -408,7 +436,7 @@ export default function ProductsPage  ()  {
     
                           <div className=" text-center md:mt-4 mt-2">
                             <h1 className="text-sm md:h-[100%] h-[38px] font-semibold">
-                            {pro.title.substring(0,20)} ...
+                            {pro.title.substring(0,18)}...
                             </h1>
                             <div className="mt-1 md:mt-0">
                               <ul className="flex items-center justify-center md:mb-2 mb-1">
@@ -474,6 +502,10 @@ export default function ProductsPage  ()  {
             </div>
 
             </div>
+            <div className=" text-center my-10">
+              {isCompleted ? <button className="border-[1px] w-52 rounded text-sm px-2 py-2 border-[#001e2b]  hover:font-medium  bg-[#001e2b] hover:bg-transparent hover:text-black text-white duration-500">End</button> : <button className="border-[1px] rounded text-sm px-2 py-2 border-[#001e2b]  hover:font-medium  bg-[#001e2b] hover:bg-transparent hover:text-black text-white duration-500 w-52" onClick={loadMore}>Load more</button>}
+            </div>
+
               {/* panigation */}
               {/* <nav className='mt-10 container mx-auto'>
                           <div className=' flex w-full items-center justify-end'>

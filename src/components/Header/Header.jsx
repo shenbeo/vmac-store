@@ -60,8 +60,8 @@ const logout = ()=>{
         <Float_btn />
 
           <div className=" w-full fixed top-0 left-0  text-xl z-10">
-            <div className="bg-red-500 pt-1 text-white font-medium text-base">
-                <marquee behavior="alternate">HOT SALE !!! Record SALE OFF !! 20% only today </marquee>
+            <div className="bg-red-500 pt-1 text-white md:font-medium md:text-base text-xs">
+                <marquee behavior="alternate">Record SALE OFF !! 20% only today </marquee>
             </div>
             <div className="md:flex flex items-center shadow-md justify-around md:h-[60px] h-[50px] bg-[#001e2b] text-white  md:px-0 px-2">
 {/*MENU MOBI*/}
@@ -91,17 +91,19 @@ const logout = ()=>{
   
 {/* TEXT */}
               <div>
-                <ul className={` bg-[#000] bg-opacity-90 md:flex md:items-center  md:pb-0 h-screen md:h-0  absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0  transition-all duration-500  ease-in ${
+                <ul className={` bg-[#000] bg-opacity-90  md:flex  md:items-center  md:pb-0 h-screen md:h-0  absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0  transition-all duration-500  ease-in ${
                     open ? "top-[50px]" : "top-[-1800px]"
                   }`}>
-                  {Links.map((link) => (
-                    <li key={link.name} className=" md:text-base text-[18px] md:h-[62px] md:w-[100px] md:flex md:items-center md:justify-center hover:bg-[#49474769] transition-all duration-600 ease-in h-[50px] flex items-center  md:mx-3 ">
-                      <NavLink to={link.link} className="text-white items-center justify-center duration-500 ml-6 md:ml-0 flex">
-                            <h1 className="md:hidden">{link.icon}</h1>
-                            <p className="ml-3 md:ml-0 text-sm md:text-base">{link.name}</p>
-                      </NavLink>
-                    </li>
-                  ))}
+                  <div className=" mt-8  md:mt-0   md:flex">
+                    {Links.map((link) => (
+                      <li key={link.name} className=" md:text-base text-[18px]  md:h-[62px] md:w-[100px] md:flex md:items-center md:justify-center hover:bg-[#49474769] transition-all duration-600 ease-in h-[50px] flex items-center  md:mx-3 ">
+                        <NavLink to={link.link} className="text-white items-center justify-center duration-500 ml-6 md:ml-0 flex">
+                              <h1 className="md:hidden">{link.icon}</h1>
+                              <p className="ml-3 md:ml-0 text-sm md:text-base">{link.name}</p>
+                        </NavLink>
+                      </li>
+                    ))}
+                  </div>
                   {/* <li
                     onClick={() => loading()}
                     className=" text-[18px]  transition-all duration-600 ease-in h-[50px] flex items-center"

@@ -13,20 +13,20 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Slider () {
   return (
-    <div className=" md:mt-20 mt-12">
+    <div className=" md:mt-20 mt-12 responsive">
       <div>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 4800,
+            delay: 4000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           // navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay,  Navigation]}
           className="mySwiper"
         >
           <div>
@@ -34,26 +34,34 @@ export default function Slider () {
               return (
                 <SwiperSlide key={index}>
                   <div className="w-[100%] h-[100%] flex overflow-hidden relative items-center">
-                    <img className="object-cover" src={slides.img} alt="image-slider" />
-                    <div className="absolute flex flex-col items-center justify-center ">
-                      <div className="flex flex-col items-center justify-center md:ml-[300px] ml-[10px]">
+                    <img className="object-cover h-[400px]" src={slides.img} alt="image-slider" />
+                    <div className="absolute flex flex-col pl-[4%] ">
+
+                      <div className="flex flex-col ">
                         <h1 className="text-white mb-3 md:text-4xl text-[16px] font-semibold">
                           {slides.title}
                         </h1>
-                        <div className="text-white  text-[8px] md:text-sm md:w-[100%] w-[200px] flex flex-wrap md:mb-5 mb-2 font-light tracking-widest">
-                          <p className="text-center">
+                        <div className="text-white">
+                        <p className="text-xs font-medium mb-2">
                             LOREM IPSUM, DOLOR SIT AMET CONSECTETUR
                           </p>
+                          <div className=" title">
+                          
+                            <span className="text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam laboriosam illo placeat iure architecto ipsum totam, voluptatibus sapiente vitae eveniet incidunt. Ad omnis ab laudantium commodi obcaecati temporibus voluptates.</span></div>
                         </div>
                       </div>
 
-                      <div className="md:ml-[300px] ml-[10px] md:mt-2">
+
+                      <div className=" md:mt-4">
                         <Link to="/productsPage">
-                          <button className="text-white border-[1px] border-red-600 py-1 px-2 font-light hover:bg-red-600 duration-500  text-[8px] md:text-base">
+                          <button className="text-white font-medium border-[1px] border-red-600 py-1 px-2  hover:bg-red-600 duration-500  text-[8px] md:text-base text-xs">
                             Shop Now
                           </button>
                         </Link>
                       </div>
+
+
+
                     </div>
                   </div>
                 </SwiperSlide>

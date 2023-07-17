@@ -4,7 +4,7 @@ import { FloatButton } from "antd";
 export default function Float_btn() {
   return (
     <div className="">
-      <FloatButton.Group trigger="click" type="primary" style={{ right: 94}}
+      <FloatButton.Group trigger="click" type="primary" style={{ right: 80}}
         icon={<CustomerServiceOutlined  />}
       >
         <FloatButton />

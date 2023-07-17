@@ -42,3 +42,14 @@ html{
     z-index: -2;
   }
   
+
+  @media screen and (max-width:767px){
+    .itemss{
+      margin-top: 4.5rem;
+    }
+  
+  }
+
+
+  
+  
