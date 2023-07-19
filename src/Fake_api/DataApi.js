@@ -116,8 +116,6 @@ export const proApiSale = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },
 
-
-
   {
     id: 6,
     title: "iPhone 13 Pro Max 512GB",
@@ -128,9 +126,6 @@ export const proApiSale = [
     category: "iphone13",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },
-
-
-
 ];
 
 export const proApiHome = [
@@ -183,8 +178,6 @@ export const proApiHome = [
     category: "ipadair",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, perspiciatis neque molestiae minima hic eligendi. Voluptatibus architecto sed hic quisquam excepturi modi unde? Vel odio, illum facilis hic consectetur labore.",
   },
-
-  
 ];
 
 export const proApi = [

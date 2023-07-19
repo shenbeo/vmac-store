@@ -61,7 +61,7 @@ export default function ProductsDetails ()  {
           <div className="container mx-auto md:px-0 px-2">
             <div className=" bg-white w-[100%] h-[100%] ">
               <div className="  pt-[60px] ">
-                <div className="md:flex justify-center items-center mt-[30px]">
+                <div className="md:flex justify-evenly items-center mt-[5rem]">
                   <div className="flex items-center justify-center">
                     <img
                       className="md:h-[300px] h-[300px] object-cover"
@@ -489,13 +489,13 @@ export default function ProductsDetails ()  {
                   </h1>
                 </div>
                 
-                <div className="md:flex  md:justify-center grid grid-cols-2 justify-between gap-4  items-center md:mt-16 mt-[20px]">
+                <div className="grid grid-cols-2 md:grid-cols-6 md:grid container mx-auto gap-4 md:mt-8 mt-[20px]">
                   
                   {products.map((prohome, index) => {
                     return (
                      
                       
-                        <div key={index} className="overflow-hidden relative border-[1px] rounded-lg hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 md:pb-1 pb-4">
+                        <div key={index} className="overflow-hidden relative border-[1px] rounded-xl border_sh hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 md:pb-1 pb-4">
                           {/* {loading ? <Loader/> :
                             <div> */}
                               <Link

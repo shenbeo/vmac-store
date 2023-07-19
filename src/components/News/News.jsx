@@ -20,7 +20,7 @@ export default function News  ()  {
       <div className="md:flex md:flex-wrap md:mt-8 mt-8">
 
 {/* NEWS 1 */}
-        <div className="flex-1 rounded-lg  bg-[#f2f2f2]">
+        <div className="flex-1 rounded-xl hover:shadow-xl duration-500  bg-[#f2f2f2]">
           <div className="flex-col items-center justify-center p-4">
             <h1 className="text-sm font-bold ">
               In celebration of Black History Month, Apple releases new Black...
@@ -31,7 +31,7 @@ export default function News  ()  {
             </h2>
             <Link to="https://www.apple.com/newsroom/2023/01/apple-celebrates-black-history-month-with-unity-collection-and-exclusive-content/">
               <img
-                className="md:h-[240px] w-full h-[180px] rounded-lg md:w-[100%]  object-cover "
+                className="md:h-[240px] w-full h-[180px] rounded-xl md:w-[100%]  object-cover "
                 src={news1}
                 alt="img-new.01"
               />
@@ -47,7 +47,7 @@ export default function News  ()  {
 {/* END NEWS 1 */}
 
 {/* NEWS 2 */}
-        <div className="flex-1 md:mx-3 md:mt-0 mt-[20px] rounded-lg  bg-[#f2f2f2]">
+        <div className="flex-1 md:mx-3 md:mt-0 mt-[20px] rounded-xl hover:shadow-xl duration-500  bg-[#f2f2f2]">
           <div className="flex-col items-center justify-center  p-4">
             <h1 className="text-sm font-bold ">
               Apple unveils MacBook Pro featuring M2 Pro and M2 Max, with more...
@@ -59,7 +59,7 @@ export default function News  ()  {
 
             <Link to="https://www.apple.com/newsroom/2023/01/apple-unveils-macbook-pro-featuring-m2-pro-and-m2-max/">
               <img
-                className="md:h-[240px] w-full h-[180px] rounded-lg md:w-[100%]  object-cover "
+                className="md:h-[240px] w-full h-[180px] rounded-xl md:w-[100%]  object-cover "
                 src={news2}
                 alt="img-new.02"
               />
@@ -75,7 +75,7 @@ export default function News  ()  {
 {/* END NEWS 2 */}
 
 {/* NEWS 3 */}
-        <div className="flex-1  md:mt-0 mt-[20px] rounded-lg bg-[#f2f2f2]">
+        <div className="flex-1  md:mt-0 mt-[20px] rounded-xl hover:shadow-xl duration-500  bg-[#f2f2f2]">
           <div className="flex-col items-center justify-center p-4">
             <h1 className="text-sm font-bold">
               Apple introduces new Mac mini with M2 and M2 Pro-more powerful,
@@ -88,7 +88,7 @@ export default function News  ()  {
 
             <Link to="https://www.apple.com/newsroom/2023/01/apple-introduces-new-mac-mini-with-m2-and-m2-pro-more-powerful-capable-and-versatile-than-ever/">
               <img
-                className="md:h-[240px] w-full h-[180px] rounded-lg md:w-[100%]  object-cover "
+                className="md:h-[240px] w-full h-[180px] rounded-xl md:w-[100%]  object-cover "
                 src={news3}
                 alt="img-new.03"
               />

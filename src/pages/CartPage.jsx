@@ -98,7 +98,7 @@ export default function CartPage  ()  {
           <Header />
     
             <div className=" container mx-auto px-2 md:px-0">
-              <div className="md:flex md:flex-col justify-between items-center container ">
+              <div className="md:flex md:flex-col justify-between items-center container">
       
               
                   <div className=" md:grid md:grid-cols-2 flex flex-col  md:mt-32 pt-[90px] md:pt-0 md:min-h-[620px] ">

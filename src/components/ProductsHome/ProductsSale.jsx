@@ -33,10 +33,10 @@ export default function ProductsHome  ()  {
   
   
         
-        <div data-aos="fade-up" data-aos-duration="1000"   className="md:flex md:flex-wrap md:justify-center grid grid-cols-2 justify-between md:gap-4 gap-2 items-center md:mt-8 mt-[20px]">
+        <div data-aos="fade-up" data-aos-duration="1000"   className="grid grid-cols-2 md:grid-cols-6 md:grid container mx-auto gap-4 md:mt-8 mt-[20px]">
           {products.map((prosale, index) => {
             return (
-              <div key={index} className="overflow-hidden relative border-[1px] rounded-lg border-[#d3d3d3] hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl hover:shadow-2xl px-2 pt-4 md:pb-1 pb-4">
+              <div key={index} className="overflow-hidden relative border-[1px] rounded-xl border_sh  hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl hover:shadow-2xl px-2 pt-4 md:pb-1 pb-4">
                 <Link to={`/productsHome/${prosale.id}`} className="flex items-center justify-center">
                   <img
                     className=" object-cover hover:scale-[1.1] ease-in w-44 duration-200 cursor-pointer"

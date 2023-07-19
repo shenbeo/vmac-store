@@ -50,6 +50,8 @@ html{
   
   }
 
-
-  
+.border_sh{
+  border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+  /* border-right: 5px solid rgba(255, 255, 255, 0.1); */
+}
   

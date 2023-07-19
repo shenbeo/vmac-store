@@ -425,7 +425,7 @@ export default function ProductsPage  ()  {
       <Sekeleton/>
     ) : (
                       <div key={index} 
-                       className="overflow-hidden relative border-[1px] border-[#d3d3d3] rounded-lg hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 pb-4 m-1">
+                       className="overflow-hidden relative border-[1px] border_sh rounded-xl hover:border-[#001e2b] duration-700 cursor-pointer shadow-xl px-2 pt-4 pb-4 m-1">
                         <Link to={`/productsPage/${pro.id}`} className="flex items-center justify-center">
                           <img
                             src={pro.img}
