@@ -1,6 +1,6 @@
 {
   "name": "web-vmac",
-
+  "homepage": "https://shenbeo.github.io/vmac-store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
