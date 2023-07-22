@@ -5,7 +5,7 @@ import news1 from "../../assets/img/news01.jpg";
 import news2 from "../../assets/img/news02.jpg";
 import news3 from "../../assets/img/news03.jpg";
 
-export default function News  ()  {
+export default function News() {
   return (
     <div
       data-aos="fade-up"
@@ -18,15 +18,17 @@ export default function News  ()  {
         </h1>
       </div>
       <div className="md:flex md:flex-wrap md:mt-8 mt-8">
-
-{/* NEWS 1 */}
+        {/* NEWS 1 */}
         <div className="flex-1 rounded-xl hover:shadow-xl duration-500  bg-[#f2f2f2]">
           <div className="flex-col items-center justify-center p-4">
             <h1 className="text-sm font-bold ">
               In celebration of Black History Month, Apple releases new Black...
             </h1>
             <h2 className="text-xs my-1 mb-5 items-center flex mt-2">
-              <DateRangeOutlined style={{ fontSize: "16px" }} className="mr-1" />
+              <DateRangeOutlined
+                style={{ fontSize: "16px" }}
+                className="mr-1"
+              />
               18/01/2022
             </h2>
             <Link to="https://www.apple.com/newsroom/2023/01/apple-celebrates-black-history-month-with-unity-collection-and-exclusive-content/">
@@ -38,22 +40,25 @@ export default function News  ()  {
             </Link>
             <div className="mt-5">
               <p className="text-xs font-medium text-justify">
-                Starting today, customers can show their support with this
-                year is Black Unity Collection, which includes a special-edition...
+                Starting today, customers can show their support with this year
+                is Black Unity Collection, which includes a special-edition...
               </p>
             </div>
           </div>
         </div>
-{/* END NEWS 1 */}
 
-{/* NEWS 2 */}
+        {/* NEWS 2 */}
         <div className="flex-1 md:mx-3 md:mt-0 mt-[20px] rounded-xl hover:shadow-xl duration-500  bg-[#f2f2f2]">
           <div className="flex-col items-center justify-center  p-4">
             <h1 className="text-sm font-bold ">
-              Apple unveils MacBook Pro featuring M2 Pro and M2 Max, with more...
+              Apple unveils MacBook Pro featuring M2 Pro and M2 Max, with
+              more...
             </h1>
             <h2 className="text-xs my-1 mb-5 items-center flex mt-2">
-              <DateRangeOutlined style={{ fontSize: "18px" }} className="mr-1" />
+              <DateRangeOutlined
+                style={{ fontSize: "18px" }}
+                className="mr-1"
+              />
               1/01/2022
             </h2>
 
@@ -72,9 +77,8 @@ export default function News  ()  {
             </div>
           </div>
         </div>
-{/* END NEWS 2 */}
 
-{/* NEWS 3 */}
+        {/* NEWS 3 */}
         <div className="flex-1  md:mt-0 mt-[20px] rounded-xl hover:shadow-xl duration-500  bg-[#f2f2f2]">
           <div className="flex-col items-center justify-center p-4">
             <h1 className="text-sm font-bold">
@@ -82,7 +86,10 @@ export default function News  ()  {
               capable,...
             </h1>
             <h2 className="text-xs my-1 mb-5 items-center flex mt-2">
-              <DateRangeOutlined style={{ fontSize: "18px" }} className="mr-1" />
+              <DateRangeOutlined
+                style={{ fontSize: "18px" }}
+                className="mr-1"
+              />
               17/01/2022
             </h2>
 
@@ -102,11 +109,9 @@ export default function News  ()  {
             </div>
           </div>
         </div>
-{/* END NEWS 3 */}
       </div>
-{/* END NEW */}
 
-{/* MORE */}
+      {/* MORE */}
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -119,9 +124,6 @@ export default function News  ()  {
           </button>
         </Link>
       </div>
-{/* END MORE */}
     </div>
   );
-};
-
-
+}

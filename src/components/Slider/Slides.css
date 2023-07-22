@@ -1,4 +1,6 @@
-#app { height: 100% }
+#app {
+  height: 100%;
+}
 html,
 body {
   position: relative;
@@ -33,12 +35,11 @@ body {
   object-fit: cover;
 }
 
-
-.title{
+.title {
   font-size: 0.9em;
   max-width: 600px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter:  blur(3px);
+  backdrop-filter: blur(3px);
   text-shadow: var(--text-shadow);
   padding: 20px;
   border-radius: 10px;
@@ -49,19 +50,13 @@ body {
   /* opacity: 0; */
 }
 
-
-
-@media screen and (max-width:767px){
-  .responsive{
-      display: none;
-
-}
-}
-@media screen and (max-width:768px){
-  .responsive{
-      display: none;
+@media screen and (max-width: 767px) {
+  .responsive {
+    display: none;
   }
-
 }
-
-
+@media screen and (max-width: 768px) {
+  .responsive {
+    display: none;
+  }
+}

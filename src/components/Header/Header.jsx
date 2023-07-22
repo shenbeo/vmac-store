@@ -19,10 +19,11 @@ import { signOut } from "firebase/auth";
 import { auth } from "../../Firebase.config";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import Float_btn from "../Loader/Float_btn";
+// import Float_btn from "../Loader/Float_btn";
 
 
 export default function Header ()  {
+
   const [loading, setLoading] = useState(false);
   const {currentUser} = useAuth()
   const profileActionRef = useRef(null)
@@ -33,6 +34,7 @@ export default function Header ()  {
 
 const toggleProfileActions = () => profileActionRef.current.classList.toggle('show__profileActions') // HOVER ACTION
 
+// LOGOUT
 const logout = ()=>{
   signOut(auth).then(()=>{
     toast.success('Logged out')
@@ -42,6 +44,7 @@ const logout = ()=>{
   })
 }
 
+// LOADING
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -49,26 +52,28 @@ const logout = ()=>{
     }, 1500);
   }, []);
 
+// FAKE API MENU
   let Links = [
     { name: "Home", link: "/", icon: <HomeOutlined style={{ fontSize: "20px" }} />  },
     { name: "Products", link: "/productsPage", icon: <LocalOfferOutlined style={{ fontSize: "20px" }} /> },
     { name: "Cart", link: "/cartPage", icon: <ShoppingCartOutlined style={{ fontSize: "20px" }}/> },
   ];
 
+
   return (
       <div>
-        <Float_btn />
+        {/* <Float_btn /> */}
 
           <div className=" w-full fixed top-0 left-0  text-xl z-10">
-            <div className="bg-red-500 pt-1 text-white md:font-medium md:text-base text-xs">
-                <marquee behavior="alternate">Record SALE OFF !! 20% only today </marquee>
-            </div>
+              <div className="bg-red-500 pt-1 text-white md:font-medium md:text-base text-xs">
+                  <marquee behavior="alternate">Record SALE OFF !! 20% only today </marquee>
+              </div>
             <div className="md:flex flex items-center shadow-md justify-around md:h-[60px] h-[50px] bg-[#001e2b] text-white  md:px-0 px-2">
 {/*MENU MOBI*/}
             <div onClick={() => setOpen(!open)}className="cursor-pointer md:hidden">
                   <MenuOutlined style={{ fontSize: "30px" }}></MenuOutlined>
             </div>
-{/*END MENU MOBI */}
+
   
 {/* LOGO */}
               <div className="flex-auto  md:flex-initial">
@@ -87,7 +92,7 @@ const logout = ()=>{
                   </div>
                 </NavLink>
               </div>
-{/* END LOGO */}
+
   
 {/* TEXT */}
               <div>
@@ -133,6 +138,7 @@ const logout = ()=>{
                       </div>
                   </NavLink>
                 </div>
+{/* CART */}
                 <div>
                   <NavLink to="/cartPage">
                       <div className="flex  cursor-pointer mr-3   ">
@@ -143,9 +149,8 @@ const logout = ()=>{
                       </div>
                   </NavLink>
                 </div>
-{/* END TEXT */}
   
-{/* LOGIN & CART */} 
+{/* LOGIN*/} 
             <div className="profile z-[9] relative md:ml-2 ml-1 ">
             
                 <img  className="w-[40px] h-[40px]  ease-in duration-200  cursor-pointer rounded-full" src={ currentUser ? currentUser.photoURL : usericon} alt="icon-user" onClick={toggleProfileActions}  />
@@ -161,10 +166,7 @@ const logout = ()=>{
                                 )
                           }
                         </div>
-                     
-            </div>
-{/*END LOGIN & CART */}
-
+                  </div>
               </div>
             </div>
           </div>

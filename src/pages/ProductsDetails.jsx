@@ -29,17 +29,21 @@ export default function ProductsDetails ()  {
   const { addItem } = useCart();
   const { productId } = useParams();
 
+// 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+// 
   const success = () => {
     toast.success("Product added successfully");
   };
-  
+
+// 
   const singleProduct = proApi.find((pro) => pro.id === parseInt(productId));
   const { id, img, imgSale, title, price, priceOld, desc } = singleProduct;
 
+  // LOADING
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -48,6 +52,7 @@ export default function ProductsDetails ()  {
     }, 1500);
   }, []);
 
+  
   return (
     <div className=" bg-white">
       { loading ?  <div className="flex  h-[100vh] items-center justify-center">

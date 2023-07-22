@@ -3,8 +3,7 @@ import React from 'react'
 
 export default function Policy  ()  {
   return (
-    <div className='  bg-[#ccc] px-2 md:px-0'>
-
+    <div className='bg-[#ccc] px-2 md:px-0'>
         <div className='md:flex w-full grid grid-cols-2 container mx-auto  py-6  md:mt-10 mt-14   md:items-center justify-between '>
     
     {/* TEXT 1 */}
@@ -16,8 +15,6 @@ export default function Policy  ()  {
                                 <p className='text-xs font-medium'>Free shipping</p>
                             </div>
                     </div>
-               
-    {/* END TEXT 1 */}
     
     {/* TEXT 2 */}
                 <div className='flex md:flex-col md:flex md:items-center md:justify-center '>
@@ -27,7 +24,6 @@ export default function Policy  ()  {
                             <p className='text-xs font-medium'>30-day money-back guarantee</p>
                         </div>
                 </div>
-    {/* END TEXT 2 */}
     
     {/* TEXT 3 */}
                 <div className='flex md:flex-col md:flex md:items-center md:justify-center md:mt-0 mt-2'>
@@ -37,7 +33,6 @@ export default function Policy  ()  {
                             <p className=' font-medium text-xs'>All payments are guaranteed</p>
                         </div>
                 </div>
-    {/* END TEXT 3 */}
     
     {/* TEXT 4 */}
                 <div className='flex md:flex-col md:flex md:items-center  md:justify-center md:mt-0 mt-2'>
@@ -47,8 +42,6 @@ export default function Policy  ()  {
                             <p className='text-xs font-medium'>Hourly time for delivery.</p>
                         </div>
                 </div>
-    {/* END TEXT 4 */}
-    
         </div>
     </div>
   )

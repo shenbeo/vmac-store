@@ -8,10 +8,9 @@ import Footer from "../components/Footer/Footer";
 import ProductsHome from "../components/ProductsHome/ProductsHome";
 import { useState, useEffect } from "react";
 import ItemList from "../components/Items/ItemList";
-import RotateLoader from "react-spinners/RotateLoader"
+import RotateLoader from "react-spinners/RotateLoader";
 
-
-export default function HomePage  ()  {
+export default function HomePage() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -20,16 +19,18 @@ export default function HomePage  ()  {
     }, 1500);
   }, []);
 
-
-return (
-    <div >
-    { loading ? 
-    <div className="flex  h-[100vh] items-center justify-center">
-      <RotateLoader color="#001e2b" 
+  return (
+    <div>
+      {loading ? (
+        <div className="flex  h-[100vh] items-center justify-center">
+          <RotateLoader
+            color="#001e2b"
             height={8}
             width={400}
-            loading={loading}/>
-    </div> :
+            loading={loading}
+          />
+        </div>
+      ) : (
         <div className=" bg-white">
           <Header />
           <Slider />
@@ -40,9 +41,7 @@ return (
           <Policy />
           <Footer />
         </div>
-}
+      )}
     </div>
   );
-};
-
-
+}

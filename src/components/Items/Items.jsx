@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
-export default function Items ({ item }) {
+export default function Items({ item }) {
   const [hoverEffects, setHoverEffects] = useState(" opacity-0");
 
-// OPACITY
+  // OPACITY
   function handleHoverEnter() {
     setHoverEffects(" opacity-1 bg-[rgba(0,0,0,0.3)]");
   }
   function handleHoverExit() {
     setHoverEffects(" opacity-0");
   }
-//END OPACITY
 
   return (
     <div className="">
@@ -42,6 +39,4 @@ export default function Items ({ item }) {
       </Link>
     </div>
   );
-};
-
-
+}
