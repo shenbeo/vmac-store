@@ -20,7 +20,7 @@ export default function ProductsPage() {
   const [loadingSk, setLoadingSk] = useState();
   const [isCompleted, setIsCompleted] = useState(false);
   const [index, setIndex] = useState(10);
-  const initialPosts = proApi.slice(0, index);
+  const initialPosts = products.slice(0, index);
 
 // LOADMORE
   const loadMore = () => {
